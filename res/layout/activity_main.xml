@@ -5,12 +5,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="${relativePackage}.${activityClass}" >
-
-  
-
     <RelativeLayout
         android:layout_width="fill_parent"
-     
+android:layout_height="0dp"     
         android:background="#FFF" 
         android:layout_weight="0.1"
         
@@ -32,7 +29,6 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
            android:background="@drawable/pause" />
-
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
@@ -42,12 +38,11 @@
             android:layout_centerHorizontal="true"
             android:text="Ma chaine Radio"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="fill_parent"
-
+android:layout_height="0dp"
         android:background="#CCC" 
           android:layout_weight="0.8"
          >
@@ -63,7 +58,7 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-      
+      android:layout_height="0dp"
         android:background="#FFF"
           android:layout_weight="0.1"
         
@@ -76,7 +71,6 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:background="@drawable/record"/>
-
         <Button
             android:id="@+id/button4"
             android:layout_width="60dp"
