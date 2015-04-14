@@ -1,12 +1,90 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+  
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+     
+        android:background="#FFF" 
+        android:layout_weight="0.1"
+        
+        >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/play" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+           android:background="@drawable/pause" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:text="Ma chaine Radio"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+
+        android:background="#CCC" 
+          android:layout_weight="0.8"
+         >
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+      
+        android:background="#FFF"
+          android:layout_weight="0.1"
+        
+          >
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/record"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/stop"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
