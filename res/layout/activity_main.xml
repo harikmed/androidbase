@@ -1,84 +1,102 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout1"
+    android:id="@+id/LinearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="${relativePackage}.${activityClass}" >
+
     <RelativeLayout
         android:layout_width="fill_parent"
-android:layout_height="0dp"     
-        android:background="#FFF" 
-        android:layout_weight="0.1"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:layout_weight="0.25"
         
-        >
+         >
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/play" />
+        <EditText
+            android:id="@+id/tdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10"
+            android:inputType="numberDecimal" >
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-           android:background="@drawable/pause" />
+            <requestFocus />
+        </EditText>
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/button2"
-            android:layout_alignBottom="@+id/button2"
-            android:layout_centerHorizontal="true"
-            android:text="Ma chaine Radio"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27dp"
+            android:text="Prix(Dhs)"
+            android:textSize="18sp" />
+
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="fill_parent"
-android:layout_height="0dp"
-        android:background="#CCC" 
-          android:layout_weight="0.8"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:background="#E39290" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:text="Prix($)"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/tdolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            
+             />
+
+    </RelativeLayout>
+
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:layout_weight="0.25"
+        
+         >
+    </RelativeLayout>
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#E39290"
+        android:layout_weight="0.25"
+        
          >
 
-        <WebView
-            android:id="@+id/webView1"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+          <Button
+              android:id="@+id/bconvertir"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:text="Convertir"
+              android:gravity="bottom"
+              android:textAlignment="center"
+               />
 
     </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-      android:layout_height="0dp"
-        android:background="#FFF"
-          android:layout_weight="0.1"
-        
-          >
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/record"/>
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/stop"/>
-
-    </RelativeLayout>
-
+      
+  
 </LinearLayout>
